@@ -5,7 +5,7 @@ const app = express()
 
 
 app.get('/',(req,res)=>{
-    res.send(`I am From Render`)
+    res.send(`I am From Render Node Js`)
 })
 
 app.listen(process.env.PORT,()=>{
