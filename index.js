@@ -1,5 +1,5 @@
 const express = require('express')
-
+require('dotenv').config()
 const app = express()
 
 
@@ -8,6 +8,6 @@ app.get('/',(req,res)=>{
     res.send(`I am From Render`)
 })
 
-app.listen(6000,()=>{
-    console.log("Lisning on PORT : 6000 ")
+app.listen(process.env.PORT,()=>{
+    console.log(`Lisning on PORT : ${process.env.PORT} `)
 })
